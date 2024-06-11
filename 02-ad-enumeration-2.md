@@ -61,3 +61,20 @@ Do the previous commands all in one command:
 Get-DomainGPO -Identity (Get-DomainOU -Identity StudentMachines).gplink.substring(11,(Get-DomainOU -Identity StudentMachines).gplink.length-72)
 ```
 
+Get GPO(s) which use Restricted Groups or groups.xml for interesting users:
+
+```powershell
+Get-DomainGPOLocalGroup
+```
+
+Get users which are in a local group of a machine using GPO:
+
+```powershell
+Get-DomainGPOComputerLocalGroupMapping -ComputerIdentity dcorp-student1
+```
+
+Get machines where the given user is member of a specific group:
+
+```powershell
+Get-DomainGPOUserLocalGroupMapping -Identity student1 -Verbose
+```

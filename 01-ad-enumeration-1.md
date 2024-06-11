@@ -100,7 +100,7 @@ Get-DomainGroupMember -Identity "Enterprise Admins" -Domain moneycorp.local
 
 List all the local groups on a machine (needs administrator privs on non-dc machines):
 
-```
+```powershell
 Get-NetLocalGroup -ComputerName dcorp-dc
 ```
 
