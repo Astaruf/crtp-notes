@@ -13,4 +13,4 @@
 
 ## AD Exploitation
 
-* [Page 1](ad-exploitation-1/page-1.md)
+* [Learning Objective 05](ad-exploitation-1/learning-objective-05.md)
