@@ -1,3 +1,7 @@
+---
+description: Enumerate OUs and GPOs
+---
+
 # 02 - AD Enumeration 2
 
 Enumerate following for the domain:
@@ -6,6 +10,8 @@ Enumerate following for the domain:
 * List all the computers in the StudentMachines OU.
 * List the GPOs
 * Enumerate GPO applied on the StudentMachines OU.
+
+## PowerView
 
 To list all OUs (Organizational Units):
 
