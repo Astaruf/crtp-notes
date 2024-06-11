@@ -1,5 +1,11 @@
 # PowerShell
 
+## xfreerdp
+
+```bash
+xfreerdp /d:domain /u:studentx /p:password /v:IP /bpp:8 -themes -wallpaper /dynamic-resolution
+```
+
 ## <mark style="color:red;">PowerShell Scripts and Modules</mark>
 
 Load a PowerShell script using dot sourcing

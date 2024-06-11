@@ -1,8 +1,16 @@
 # Table of contents
 
 * [PowerShell](README.md)
-* [Domain Enumeration](domain-enumeration.md)
-* [01 - AD Enumeration 1](01-ad-enumeration-1.md)
-* [02 - AD Enumeration 2](02-ad-enumeration-2.md)
-* [03 - AD Enumeration 3](03-ad-enumeration-3.md)
-* [04 - AD Enumeration](04-ad-enumeration.md)
+
+## AD Exploitation
+
+* [00 - Basic Enumeration](ad-exploitation/00-basic-enumeration.md)
+* [01 - Users, Computers, Groups](ad-exploitation/01-users-computers-groups.md)
+* [02 - GPOs, OUs](ad-exploitation/02-gpos-ous.md)
+* [03 - ACLs, Permissions](ad-exploitation/03-acls-permissions.md)
+* [04 - Forests, Trusts](ad-exploitation/04-forests-trusts.md)
+* [05 - User Hunting](ad-exploitation/05-user-hunting.md)
+
+## AD Exploitation
+
+* [Page 1](ad-exploitation-1/page-1.md)
