@@ -17,7 +17,8 @@
 ## AD Exploitation
 
 * [Privilege Escalation - Local](ad-exploitation/privilege-escalation-local.md)
+* [05 - Learning Objective](ad-exploitation/05-learning-objective.md)
 
 ***
 
-* [05 - Learning Objective](05-learning-objective.md)
+* [LO 7](lo-7.md)
