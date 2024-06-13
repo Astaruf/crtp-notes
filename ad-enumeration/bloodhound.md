@@ -10,7 +10,7 @@ BloodHound Community Edition
 
 BloodHound Legacy is present in the C:\AD\Tools
 
-Supply data to BloodHound (Remember to [bypass .NET AMSI](../../#bypass-amsi-windows-defender)):
+Supply data to BloodHound (Remember to [bypass .NET AMSI](../#bypass-amsi-windows-defender)):
 
 ```powershell
 . C:\AD\Tools\BloodHound-master\Collectors\SharpHound.ps1
