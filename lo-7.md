@@ -241,6 +241,12 @@ A new shell will spawn. Try accessing the domain controller from the new process
 winrs -r:dcorp-dc cmd /c set username
 ```
 
+To get a shell:
+
+```
+winrs -r:dcorp-dc cmd
+```
+
 ## Derivative Local Admin
 
 
